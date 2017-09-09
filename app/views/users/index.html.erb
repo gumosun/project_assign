@@ -1,0 +1,12 @@
+<div class='header'>
+<h1>Project Helper</h1>
+<div>
+
+<div>
+<h3>All Current Users</h3>
+<ul>
+<% @users.each do |user|%>
+<li><%= link_to user.name, user_path(user)%></li>
+<%end%>
+</ul>
+</div>
