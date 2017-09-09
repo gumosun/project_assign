@@ -5,4 +5,6 @@
 <div>
 <h3><%=@user.name%></h3>
 <p><%=@user.email%></p>
+  <%= link_to("✎Edit User", edit_user_path(@user), :class => "pop-button") %>
+<%= button_to("Delete", @user, method: :delete, :class=>"pop-button") %>
 </div>
