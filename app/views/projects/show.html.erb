@@ -4,6 +4,7 @@
         <h2 class="card-title">Project: <%= @project.title %></h2>
         <h4><%= link_to("Owner: #{@project.user.name}", @project.user) %></h4>
         <p>Description: <%= @project.description %></p>
+        <p>Update: <%= @project.updated_at %></p>
             <div class="function"> 
                 <%= link_to("✎ Edit", edit_project_path(@project), :class => "pop-button") %>
                 <%= button_to("✕ Delete", @project, method: :delete, :class=>"pop-button") %>

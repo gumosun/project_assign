@@ -1,0 +1,11 @@
+<h1 class='header_title'>All Projects</h1>
+
+<div class="info-list">
+    <% @projects.each do |project| %>
+    <div class="all_info">
+        <h2 class="card-title"><%= link_to(project.title, project) %></h2>
+        <h4><%=project.description%></h4>
+        <h5>Date:<%=project.updated_at%>   <%= link_to("Owner: #{project.user.name}", project.user) %></h4>
+    </div>
+    <% end %>
+</div>

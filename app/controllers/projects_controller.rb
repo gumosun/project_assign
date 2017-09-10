@@ -1,6 +1,10 @@
 class ProjectsController < ApplicationController
      before_action :set_project, only: [:show, :edit, :update, :destroy]
 
+    def index
+    @projects = Project.all
+    end 
+
     def show
     @project = Project.find(params[:id])
     end    
@@ -37,7 +41,11 @@ class ProjectsController < ApplicationController
     end
     end
 
+    def search
+      redirect_to search_project_path(params[:q])
+    end
 
+ private
     def project_params
     params.require(:project).permit(:title, :description, :user_id)
     end

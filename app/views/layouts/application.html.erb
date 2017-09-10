@@ -14,11 +14,19 @@
       <h1>Projects Go!</h1>
       <div class="nav-links">
         <%= link_to("Main", users_path) %>
-        <%= link_to("All Projects", users_path) %>
+        <%= link_to("All Projects", projects_path) %>
         <%= link_to("Add User", new_user_path) %>
         <%= link_to("Add Project", new_project_path) %>
       </div>
       </nav>
     <%= yield %>
+    <footer>
+       <div class="nav-links">
+        <%= link_to("Main", users_path) %>
+        <%= link_to("All Projects", projects_path) %>
+        <%= link_to("Add User", new_user_path) %>
+        <%= link_to("Add Project", new_project_path) %>
+      </div>
+    </footer>
   </body>
 </html>
