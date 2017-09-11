@@ -15,7 +15,8 @@
  */
 
 a {
-  color: #559988;
+  color: #EE5566;
+  text-decoration: none;
 }
 
 .header {
@@ -34,6 +35,7 @@ footer {
     margin: 40px auto 0 auto;
     font-size:2vw;
     font-family: 'Acme', sans-serif;
+    padding: 25px;
 }
 
 a:hover {
@@ -42,7 +44,8 @@ a:hover {
 
 body {
   margin: 0;
-  background-color: #F5F5F5;
+  background-image: url(bg.jpeg);
+  background-size: cover;
   font-family: sans-serif;
   padding-bottom: 15px;
 }
@@ -125,8 +128,14 @@ nav .nav-links {
 
 .header_title {
     text-align: center;
-    font-size:3vw;
+    font-size: 3vw;
     font-family: 'Acme', sans-serif;
+    background: black;
+    border: 8px solid red;
+    opacity: .8;
+    width:50%;
+    margin: 20px auto;
+    color:red;
 }
 
 .form-title {
@@ -210,11 +219,13 @@ select:focus {
   -ms-flex: 1;
   flex: 1;
   min-width: 280px;
-  margin: 8px;
-  background-color: #FFF;
+  min-height: 330px;
+  margin: 8px 0px;
+  background-color: #DDEEFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   align-items: center;
+  border: 10px solid white;
 }
 
 .all_info {
@@ -232,7 +243,7 @@ select:focus {
   flex: 1;
   min-width: 800px;
   margin: 8px;
-  background-color: #FFF;
+  background-color: #DDEEFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   align-items: center;
