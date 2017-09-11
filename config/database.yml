@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: project_assign_production
-  username: project_assign
-  password: <%= ENV['PROJECT_ASSIGN_DATABASE_PASSWORD'] %>
+adapter: postgresql
+database: db/production.sqlite3
